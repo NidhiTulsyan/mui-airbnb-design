@@ -1,77 +1,73 @@
-import React from 'react'
-import {createTheme,ThemeProvider} from '@mui/material/styles'
+import React from "react";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
-    typography:{
-        allVariants:{
-            fontFamily:'Raleway',
-            textTransform:'none',
-            fontSize:15,
-        }
+  typography: {
+    allVariants: {
+      fontFamily: "Raleway",
+      textTransform: "none",
+      fontSize: 15,
     },
-    palette:{
-        primary:{
-            main:grey[700]
-        },
-        secondary:{
-            main:pink[200]
-        }
+  },
+  palette: {
+    primary: {
+      main: grey[700],
     },
-    components:{
-        MuiTypography:{
-            defaultProps:{
-                sx:{
-                    px:1
-                },
-                variant:'subtitle2',
-                textTransform:'capitalize'
-            }
+    secondary: {
+      main: pink[200],
+    },
+  },
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        sx: {
+          px: 1,
         },
-        MuiStack:{
-            defaultProps:{
-                sx:{
-                    px:2,
-                    py:2
-                },
-                spacing:2,
-                direction:'row'
-            }
+        variant: "subtitle2",
+        textTransform: "capitalize",
+      },
+    },
+    MuiStack: {
+      defaultProps: {
+        sx: {
+          px: 2,
+          py: 2,
         },
-        MuiPaper:{
-            defaultProps:{
-                elevation:0
-            }
+        spacing: 2,
+        direction: "row",
+      },
+    },
+    MuiPaper: {
+      defaultProps: {
+        elevation: 0,
+      },
+    },
+    MuiLink: {
+      defaultProps: {
+        sx: {
+          color: (theme) => theme.palette.primary.main,
         },
-        MuiLink:{
-            defaultProps:{
-                sx:{
-                    color:theme=>theme.palette.primary.main
-                },
-                underline:'none'
-            }
-        },
-        MuiButton:{
-            defaultProps:{
-                size:'small',
-                p:0,
-                disableRipple:true
-            },
-            variant:'text'
-        },
-        MuiTab:{
-            defaultProps:{
-                disableRipple:true
-            }
-        }
-    }
+        underline: "none",
+      },
+    },
+    MuiButton: {
+      defaultProps: {
+        size: "small",
+        p: 0,
+        disableRipple: true,
+      },
+      variant: "text",
+    },
+    MuiTab: {
+      defaultProps: {
+        disableRipple: true,
+      },
+    },
+  },
 });
 
 const AppThemeProvider = (prop) => {
-  return (
-    <ThemeProvider theme={theme}>
-{prop.childern}
-    </ThemeProvider>
-  )
-}
+  return <ThemeProvider theme={theme}>{prop.childern}</ThemeProvider>;
+};
 
-export default AppThemeProvider
+export default AppThemeProvider;
