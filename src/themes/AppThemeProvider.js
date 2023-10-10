@@ -36,6 +36,19 @@ const theme = createTheme({
                 spacing:2,
                 direction:'row'
             }
+        },
+        MuiPaper:{
+            defaultProps:{
+                elevation:0
+            }
+        },
+        MuiLink:{
+            defaultProps:{
+                sx:{
+                    color:theme=>theme.palette.primary.main
+                },
+                underline:'none'
+            }
         }
     }
 });
