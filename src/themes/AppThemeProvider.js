@@ -49,6 +49,19 @@ const theme = createTheme({
                 },
                 underline:'none'
             }
+        },
+        MuiButton:{
+            defaultProps:{
+                size:'small',
+                p:0,
+                disableRipple:true
+            },
+            variant:'text'
+        },
+        MuiTab:{
+            defaultProps:{
+                disableRipple:true
+            }
         }
     }
 });
