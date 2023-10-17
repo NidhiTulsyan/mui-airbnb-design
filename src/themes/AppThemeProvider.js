@@ -1,5 +1,6 @@
 import React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { grey, pink } from "@mui/material/colors";
 
 const theme = createTheme({
   typography: {
@@ -14,7 +15,7 @@ const theme = createTheme({
       main: grey[700],
     },
     secondary: {
-      main: pink[200],
+      main: pink[500],
     },
   },
   components: {
@@ -31,7 +32,7 @@ const theme = createTheme({
       defaultProps: {
         sx: {
           px: 2,
-          py: 2,
+          py: 1,
         },
         spacing: 2,
         direction: "row",
@@ -67,7 +68,7 @@ const theme = createTheme({
 });
 
 const AppThemeProvider = (prop) => {
-  return <ThemeProvider theme={theme}>{prop.childern}</ThemeProvider>;
+  return <ThemeProvider theme={theme}>{prop.children}</ThemeProvider>;
 };
 
 export default AppThemeProvider;
