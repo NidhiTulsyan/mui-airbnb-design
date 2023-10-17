@@ -12,7 +12,7 @@ function Logo() {
         sx={{
           ml: 1,
           fontWeight: "bold",
-          fontSize: "40px",
+          fontSize: "20px",
           color: (theme) => theme.palette.secondary.main,
         }}
         component={"h3"}
