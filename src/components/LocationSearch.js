@@ -35,6 +35,17 @@ const LocationSearch = () => {
               >
                 {choice.text}
               </Typography>
+              {choice.withIcon && (
+                <Box
+                  sx={{
+                    ml: 1,
+                    mt: 1,
+                    mr: 1,
+                  }}
+                >
+                  <IoSearchCircleSharp color={pink[500]} size={32}/>
+                </Box>
+              )}
             </Button>
           );
         })}
