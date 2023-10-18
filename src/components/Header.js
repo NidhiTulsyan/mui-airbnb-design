@@ -3,6 +3,7 @@ import React from "react";
 import { flexBetweenCenter, dFlex } from "themes/CommonTheme.js";
 
 import Logo from "./Logo";
+import LocationSearch from "./LocationSearch";
 
 const Header = () => {
   return (
@@ -22,6 +23,7 @@ const Header = () => {
           }}
         >
           <Logo />
+          <LocationSearch />
         </Box>
       </Container>
     </Box>
