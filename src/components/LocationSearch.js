@@ -10,18 +10,35 @@ const choices = [
 
 const LocationSearch = () => {
   return (
-    <Paper sx={{
-        borderRadius:20,
-        ml:15
-    }}
-    elevation={3}>
-<Stack sx={{
-     borderRadius:20,
-        pl:2
-}}
-divider={<Divider orientation="vertical" flexItem/>}>
-
-</Stack>
+    <Paper
+      sx={{
+        borderRadius: 20,
+        ml: 15,
+      }}
+      elevation={3}
+    >
+      <Stack
+        sx={{
+          borderRadius: 20,
+          pl: 2,
+        }}
+        divider={<Divider orientation="vertical" flexItem />}
+      >
+        {choices.map((choice) => {
+          return (
+            <Button key={choice.id}>
+              <Typography
+                sx={{
+                  color: (theme) => theme.palette.primary.main,
+                  fontWeight: "bold",
+                }}
+              >
+                {choice.text}
+              </Typography>
+            </Button>
+          );
+        })}
+      </Stack>
     </Paper>
   );
 };
