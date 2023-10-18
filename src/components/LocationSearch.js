@@ -9,7 +9,21 @@ const choices = [
 ];
 
 const LocationSearch = () => {
-  return <Box></Box>;
+  return (
+    <Paper sx={{
+        borderRadius:20,
+        ml:15
+    }}
+    elevation={3}>
+<Stack sx={{
+     borderRadius:20,
+        pl:2
+}}
+divider={<Divider orientation="vertical" flexItem/>}>
+
+</Stack>
+    </Paper>
+  );
 };
 
 export default LocationSearch;
