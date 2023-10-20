@@ -19,7 +19,7 @@ const Header = () => {
         <Box
           sx={{
             ...flexBetweenCenter,
-            minHeight: 70,
+            minHeight: 90,
             px: 4,
           }}
         >
