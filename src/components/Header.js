@@ -4,6 +4,7 @@ import { flexBetweenCenter, dFlex } from "themes/CommonTheme.js";
 
 import Logo from "./Logo";
 import LocationSearch from "./LocationSearch";
+import ProfileSettings from "./ProfileSettings";
 
 const Header = () => {
   return (
@@ -24,6 +25,7 @@ const Header = () => {
         >
           <Logo />
           <LocationSearch />
+          <ProfileSettings />
         </Box>
       </Container>
     </Box>
