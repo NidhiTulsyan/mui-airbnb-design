@@ -23,7 +23,7 @@ const Header = () => {
           }}
         >
           <Logo />
-          <LocationSearch />
+          <LocationSearch />c 
         </Box>
       </Container>
     </Box>
