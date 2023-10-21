@@ -4,7 +4,11 @@ import { FaSearch } from "react-icons/fa";
 import { VscSettings } from "react-icons/vsc";
 
 const MobileSearch = () => {
-  return <Paper></Paper>;
+  return <Paper component="form" sx={{
+    p:'2px 4px',
+    display:'flex',
+    
+  }}></Paper>;
 };
 
 export default MobileSearch;
