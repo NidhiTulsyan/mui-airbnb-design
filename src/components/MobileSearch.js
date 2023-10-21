@@ -13,6 +13,7 @@ const MobileSearch = () => {
         alignItems: "center",
         width: 400,
         border: "1px solid #ccc",
+        borderRadius: 20,
       }}
     ></Paper>
   );
