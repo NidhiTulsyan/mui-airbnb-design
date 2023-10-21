@@ -1,11 +1,10 @@
-import React from 'react'
+import { IconButton, InputBase, Paper } from "@mui/material";
+import React from "react";
+import { FaSearch } from "react-icons/fa";
+import { VscSettings } from "react-icons/vsc";
 
 const MobileSearch = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <Paper></Paper>;
+};
 
-export default MobileSearch
+export default MobileSearch;
