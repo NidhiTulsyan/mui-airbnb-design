@@ -15,7 +15,14 @@ const MobileSearch = () => {
         border: "1px solid #ccc",
         borderRadius: 20,
       }}
-    ></Paper>
+    >
+      <IconButton sx={{ p: "10px" }}>
+        <FaSearch />
+      </IconButton>
+      <IconButton type="submit" sx={{ p: "10px" }}>
+        <VscSettings />
+      </IconButton>
+    </Paper>
   );
 };
 
