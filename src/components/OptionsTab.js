@@ -38,6 +38,12 @@ const OptionsTab = () => {
                 })
             }
         </Tabs>
+        <Button sx={{
+            display:{xs:'none',md:'block'},
+            border:'1px solid #ddd',
+            minWidth:90,
+            justifyContent:'space-between'
+        }}></Button>
       </Box>
     </Container>
   );
