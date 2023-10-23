@@ -47,7 +47,9 @@ const OptionsTab = () => {
             py: 1,
             color: "theme.palette.text.primary",
           }}
-        ></Button>
+        >
+            <FaFilter />Filters
+        </Button>
       </Box>
     </Container>
   );
