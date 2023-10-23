@@ -33,7 +33,9 @@ const OptionsTab = () => {
           }}
         >
             {
-                
+                locationsTab.map(tab=>{
+                    return <Tab key={tab.id} icon={tab.icon} label={tab.label}/>
+                })
             }
         </Tabs>
       </Box>
