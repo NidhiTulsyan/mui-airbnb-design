@@ -45,6 +45,7 @@ const OptionsTab = () => {
             borderRadius: 2,
             textTransform: "capitalize",
             py: 1,
+            color: "theme.palette.text.primary",
           }}
         ></Button>
       </Box>
