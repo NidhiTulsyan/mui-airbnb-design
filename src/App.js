@@ -1,5 +1,6 @@
 import { Box, CssBaseline } from "@mui/material";
 import Header from "components/Header.js";
+import OptionsTab from "components/OptionsTab";
 import React from "react";
 
 
@@ -16,6 +17,7 @@ function App() {
       >
         <Box>
           <Header />
+          <OptionsTab />
         </Box>
       </Box>
     </React.Fragment>

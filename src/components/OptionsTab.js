@@ -1,6 +1,6 @@
-import { Box, Button, Container, Tab, Tabs } from "@mui/material";
+import { Box, Button, Container, Tab, Tabs, tabsClasses } from "@mui/material";
 import { FaFilter } from "react-icons/fa";
-import React from "react";
+import React, { useState } from "react";
 import { locationsTab } from "data/Mock-data";
 
 const OptionsTab = () => {
