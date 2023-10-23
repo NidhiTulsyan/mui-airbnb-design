@@ -32,18 +32,21 @@ const OptionsTab = () => {
             },
           }}
         >
-            {
-                locationsTab.map(tab=>{
-                    return <Tab key={tab.id} icon={tab.icon} label={tab.label}/>
-                })
-            }
+          {locationsTab.map((tab) => {
+            return <Tab key={tab.id} icon={tab.icon} label={tab.label} />;
+          })}
         </Tabs>
-        <Button sx={{
-            display:{xs:'none',md:'block'},
-            border:'1px solid #ddd',
-            minWidth:90,
-            justifyContent:'space-between'
-        }}></Button>
+        <Button
+          sx={{
+            display: { xs: "none", md: "block" },
+            border: "1px solid #ddd",
+            minWidth: 90,
+            justifyContent: "space-between",
+            borderRadius: 2,
+            textTransform: "capitalize",
+            py: 1,
+          }}
+        ></Button>
       </Box>
     </Container>
   );
