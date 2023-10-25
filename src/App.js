@@ -1,8 +1,8 @@
-import { Box, CssBaseline } from "@mui/material";
+import { Box, Container, CssBaseline } from "@mui/material";
 import Header from "components/Header.js";
+import LocationCards from "components/LocationCards";
 import OptionsTab from "components/OptionsTab";
 import React from "react";
-
 
 function App() {
   return (
@@ -18,6 +18,9 @@ function App() {
         <Box>
           <Header />
           <OptionsTab />
+          <Container maxWidth={"xl"} sx={{ mb: 3 ,mt:3}}>
+            <LocationCards />
+          </Container>
         </Box>
       </Box>
     </React.Fragment>
