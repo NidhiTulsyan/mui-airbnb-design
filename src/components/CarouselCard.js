@@ -27,10 +27,16 @@ const CarouselCard = ({ location }) => {
     setActivestep(step);
   };
   return (
-    <Box
-      className="carouselCards"
-      sx={{ flexGrow: 1, position: "relative" }}
-    ></Box>
+    <Box className="carouselCards" sx={{ flexGrow: 1, position: "relative" }}>
+      <Box sx={fixedIcon}>
+        <FaRegHeart size={24} color="#fff"/>
+      </Box>
+      {
+        location.locationImages.length && (
+            <SwipeableViews></SwipeableViews>
+        )
+      }
+    </Box>
   );
 };
 
