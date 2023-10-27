@@ -27,9 +27,10 @@ const CarouselCard = ({ location }) => {
     setActivestep(step);
   };
   return (
-    <Box className="carouselCards">
-
-    </Box>
+    <Box
+      className="carouselCards"
+      sx={{ flexGrow: 1, position: "relative" }}
+    ></Box>
   );
 };
 
