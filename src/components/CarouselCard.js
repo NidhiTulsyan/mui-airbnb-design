@@ -38,15 +38,18 @@ const CarouselCard = ({ location }) => {
           onChangeIndex={handleStepChange}
           enableMouseEvents
         >
-          {
-            location.locationImages.map((step,index)=>{
-              return(
-                <div>
-                  
-                </div>
-              )
-            })
-          }
+          {location.locationImages.map((step, index) => {
+            return (
+              <div key={step.id}>
+                <Box
+                  component={"img"}
+                  sx={carouselImage}
+                  src={step.url}
+                  alt={step.id}
+                ></Box>
+              </div>
+            );
+          })}
         </SwipeableViews>
       )}
     </Box>
