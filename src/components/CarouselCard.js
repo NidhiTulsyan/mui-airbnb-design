@@ -50,8 +50,22 @@ const CarouselCard = ({ location }) => {
               </div>
             );
           })}
-        </SwipeableViews>
+        </SwipeableViews>  
       )}
+      <Box sx={fixedBottom}>
+        <MobileStepper
+        sx={{backgroundColor:'transparent'}}
+        steps={maxStep}
+        position="static"
+        activeStep={activestep}
+        nextButton={
+          <Button size="small" disabled={activestep===maxStep-1} onClick={handleNext} sx={carouselDot}></Button>
+        }
+        backButton={}
+        >
+
+        </MobileStepper>
+      </Box>
     </Box>
   );
 };
