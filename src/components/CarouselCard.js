@@ -80,6 +80,28 @@ const CarouselCard = ({ location }) => {
           }
         ></MobileStepper>
       </Box>
+      <Box sx={flexBetween}>
+        <Box sx={{ mt: 2 }}>
+          <Typography component={"h3"}>{location.location}</Typography>
+          <Typography component={"h4"}>{location.days}</Typography>
+          <Typography component={"h5"}>{location.price}</Typography>
+        </Box>
+        <Box sx={{ mt: 2 }}>
+          <Box sx={dFlex}>
+            {location.isNew ? (
+              <React.Fragment>
+                <Typography component={"h5"}>New</Typography>
+                <AiFillStar size={18} />
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <Typography component={"h5"}>{location.rating}</Typography>
+                <AiFillStar size={18} />
+              </React.Fragment>
+            )}
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 };
