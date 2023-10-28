@@ -1,6 +1,7 @@
 import { Box, Button, MobileStepper, Typography } from "@mui/material";
 import React, { useState } from "react";
-import SwipeableViews from 'react-swipeable-views-utils';
+import {virtualize} from 'react-swipeable-views-utils';
+import SwipeableViews from 'react-swipeable-views';
 
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -14,6 +15,7 @@ import {
   fixedIcon,
   flexBetween,
 } from "themes/CommonTheme";
+const VirtualizeSwipeableViews = virtualize(SwipeableViews);
 
 const CarouselCard = ({ location }) => {
   const [activestep, setActivestep] = useState();
@@ -33,7 +35,7 @@ const CarouselCard = ({ location }) => {
         <FaRegHeart size={24} color="#fff" />
       </Box>
       {location.locationImages.length && (
-        <SwipeableViews
+        <VirtualizeSwipeableViews
           axis={"x"}
           index={activestep}
           onChangeIndex={handleStepChange}
@@ -51,7 +53,7 @@ const CarouselCard = ({ location }) => {
               </div>
             );
           })}
-        </SwipeableViews>
+        </VirtualizeSwipeableViews>
       )}
       <Box sx={fixedBottom}>
         <MobileStepper
