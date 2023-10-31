@@ -18,9 +18,19 @@ function App() {
         <Box>
           <Header />
           <OptionsTab />
-          <Container maxWidth={"xl"} sx={{ mb: 3 ,mt:3}}>
-            <LocationCards />
-          </Container>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              flexGrow: 1,
+              height: 100,
+              overflowY: "scroll",
+            }}
+          >
+            <Container maxWidth={"xl"} sx={{ mb: 3, mt: 3 }}>
+              <LocationCards />
+            </Container>
+          </Box>
         </Box>
       </Box>
     </React.Fragment>
