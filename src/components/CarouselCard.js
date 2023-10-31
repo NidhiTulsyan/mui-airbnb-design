@@ -2,7 +2,7 @@ import { Box, Button, MobileStepper, Typography } from "@mui/material";
 import React, { useState } from "react";
 import {virtualize} from 'react-swipeable-views-utils';
 import SwipeableViews from 'react-swipeable-views';
-
+import './CarouselCard.css';
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { AiFillStar } from "react-icons/ai";
