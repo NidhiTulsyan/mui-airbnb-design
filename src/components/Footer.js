@@ -1,6 +1,7 @@
-import { Box, Link, Paper, Stack } from '@mui/material'
+import { Box, Button, Container, Link, Paper, Stack } from '@mui/material'
 import React from 'react'
-<Box
+import { flexBetweenCenter } from 'themes/CommonTheme'
+
 
 const Footer = () => {
   return (
