@@ -24,7 +24,11 @@ const Footer = () => {
       }}
     >
       <Container maxWidth="xl">
-        <Box sx={{}}></Box>
+        <Box
+          sx={{
+            ...flexBetweenCenter,
+          }}
+        ></Box>
       </Container>
     </Box>
   );
