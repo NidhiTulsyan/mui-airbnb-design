@@ -16,7 +16,18 @@ const FooterLinks = [
 ];
 
 const Footer = () => {
-  return <Box></Box>;
+  return (
+    <Box
+      sx={{
+        ...fullWidthFlex,
+        borderTop: "1px solid #ddd",
+      }}
+    >
+      <Container maxWidth="xl">
+        <Box sx={{}}></Box>
+      </Container>
+    </Box>
+  );
 };
 
 export default Footer;
