@@ -34,6 +34,22 @@ const Footer = () => {
             <Paper>
               <Link href="#">2023 Airbnb Copywright</Link>
             </Paper>
+            {
+              FooterLinks.map(link=>{
+                return(
+                  <paper key={link.id}>
+                    <Link href={link.url}>{link.text}</Link>
+                  </paper>
+                )
+              })
+            }
+          </Stack>
+          <Stack>
+            <Paper sx={justifyCenter}>
+              <Button>
+                <Box sx={{...}}></Box>
+              </Button>
+            </Paper>
           </Stack>
         </Box>
       </Container>
