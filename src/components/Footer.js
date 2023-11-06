@@ -27,8 +27,15 @@ const Footer = () => {
         <Box
           sx={{
             ...flexBetweenCenter,
+            width:'100%'
           }}
-        ></Box>
+        >
+          <Stack>
+            <Paper>
+              <Link href="#">2023 Airbnb Copywright</Link>
+            </Paper>
+          </Stack>
+        </Box>
       </Container>
     </Box>
   );
