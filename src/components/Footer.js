@@ -47,8 +47,12 @@ const Footer = () => {
           <Stack>
             <Paper sx={justifyCenter}>
               <Button>
-                <Box sx={{...}}></Box>
+                <Box sx={{...justifyCenter,mr:1}}>
+                  <BsGlobe size={24}/>
+                </Box>
+                English (CA)
               </Button>
+              <Button></Button>
             </Paper>
           </Stack>
         </Box>
