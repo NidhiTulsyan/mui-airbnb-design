@@ -27,32 +27,31 @@ const Footer = () => {
         <Box
           sx={{
             ...flexBetweenCenter,
-            width:'100%'
+            width: "100%",
           }}
         >
           <Stack>
             <Paper>
               <Link href="#">2023 Airbnb Copywright</Link>
             </Paper>
-            {
-              FooterLinks.map(link=>{
-                return(
-                  <paper key={link.id}>
-                    <Link href={link.url}>{link.text}</Link>
-                  </paper>
-                )
-              })
-            }
+            {FooterLinks.map((link) => {
+              return (
+                <paper key={link.id}>
+                  <Link href={link.url}>{link.text}</Link>
+                </paper>
+              );
+            })}
           </Stack>
           <Stack>
             <Paper sx={justifyCenter}>
               <Button>
-                <Box sx={{...justifyCenter,mr:1}}>
-                  <BsGlobe size={24}/>
+                <Box sx={{ ...justifyCenter, mr: 1 }}>
+                  <BsGlobe size={24} />
                 </Box>
                 English (CA)
               </Button>
-              <Button></Button>
+              <Button>$CAD</Button>
+              <Button>Support & Resources</Button>
             </Paper>
           </Stack>
         </Box>
