@@ -1,4 +1,5 @@
 import { Box, Container, CssBaseline } from "@mui/material";
+import Footer from "components/Footer";
 import Header from "components/Header.js";
 import LocationCards from "components/LocationCards";
 import OptionsTab from "components/OptionsTab";
@@ -31,6 +32,9 @@ function App() {
               <LocationCards />
             </Container>
           </Box>
+        </Box>
+        <Box>
+          <Footer />
         </Box>
       </Box>
     </React.Fragment>
