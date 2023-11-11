@@ -21,7 +21,10 @@ const FooterMenu = () => {
                 }}
                 direction={"column"}
                 spacing={1}
-              ></Stack>
+              >
+                {item.icon}
+                <Typography>{item.text}</Typography>
+              </Stack>
             </Button>
           );
         })}
