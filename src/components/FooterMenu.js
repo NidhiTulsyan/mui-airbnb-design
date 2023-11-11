@@ -12,7 +12,18 @@ const FooterMenu = () => {
     <Box sx={{ display: "flex", justifyContent: "center", flexGrow: 1 }}>
       <Stack>
         {footerMenu.map((item) => {
-          return <Button key={item.id}></Button>;
+          return (
+            <Button key={item.id}>
+              <Stack
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                direction={"column"}
+                spacing={1}
+              ></Stack>
+            </Button>
+          );
         })}
       </Stack>
     </Box>
