@@ -1,5 +1,6 @@
 import { Box, Container, CssBaseline } from "@mui/material";
 import Footer from "components/Footer";
+import FooterMenu from "components/FooterMenu";
 import Header from "components/Header.js";
 import LocationCards from "components/LocationCards";
 import OptionsTab from "components/OptionsTab";
@@ -32,6 +33,9 @@ function App() {
               <LocationCards />
             </Container>
           </Box>
+        </Box>
+        <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <FooterMenu />
         </Box>
         <Box>
           <Footer />
