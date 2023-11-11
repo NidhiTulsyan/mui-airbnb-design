@@ -8,7 +8,15 @@ const footerMenu = [
   { id: 3, text: "Login", icon: <FaRegUserCircle /> },
 ];
 const FooterMenu = () => {
-  return <div></div>;
+  return (
+    <Box sx={{ display: "flex", justifyContent: "center", flexGrow: 1 }}>
+      <Stack>
+        {footerMenu.map((item) => {
+          return <Button key={item.id}></Button>;
+        })}
+      </Stack>
+    </Box>
+  );
 };
 
 export default FooterMenu;
