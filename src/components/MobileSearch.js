@@ -19,7 +19,7 @@ const MobileSearch = () => {
       <IconButton sx={{ p: "10px" }}>
         <FaSearch />
       </IconButton>
-      <InputBase sx={{ml:1,flex:1}} placeholder="Where to?" />
+      <InputBase sx={{ ml: 1, flex: 1 }} placeholder="Where to?" />
       <IconButton type="submit" sx={{ p: "10px" }}>
         <VscSettings />
       </IconButton>
