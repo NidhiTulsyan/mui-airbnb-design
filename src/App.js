@@ -5,6 +5,7 @@ import Header from "components/Header.js";
 import LocationCards from "components/LocationCards";
 import OptionsTab from "components/OptionsTab";
 import React from "react";
+import { displayOnDesktop } from "themes/CommonTheme";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
         <Box sx={{ display: { xs: "flex", md: "none" } }}>
           <FooterMenu />
         </Box>
-        <Box>
+        <Box sx={displayOnDesktop}>
           <Footer />
         </Box>
       </Box>
